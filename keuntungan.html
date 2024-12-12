@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Barang Masuk dan Keuntungan</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar Menu -->
+        <!-- Sidebar Menu -->
+    <aside class="sidebar">
+    <h2>Menu</h2>
+        <nav>
+            <ul>
+                <li><a href="index.html" id="home">Beranda</a></li>
+                <li><a href="stok.html" id="stock">Stok Barang</a></li>
+                <li><a href="barang_masuk.html" id="incoming">Barang Masuk</a></li>
+                <li><a href="penjualan.html" id="sales">Penjualan</a></li>
+                <li><a href="pengeluaran.html" id="expenses">Pengeluaran</a></li>
+                <li><a href="keuntungan.html" id="profit">Keuntungan</a></li> 
+            </ul>
+        </nav>
+    </aside>
+
+
+        <!-- Main Content -->
+        <main class="content">
+            <h1>Barang Masuk</h1>
+
+            <!-- Form untuk menambahkan barang masuk -->
+            <form id="incoming-form">
+                <label for="barang">Barang:</label>
+                <select id="barang" name="barang">
+                    <option value="barang1">Barang 1</option>
+                    <option value="barang2">Barang 2</option>
+                    <option value="barang3">Barang 3</option>
+                    <option value="barang4">Barang 4</option>
+                    <option value="barang5">Barang 5</option>
+                    <option value="barang6">Barang 6</option>
+                    <option value="barang7">Barang 7</option>
+                    <option value="barang8">Barang 8</option>
+                </select>
+                <br><br>
+
+                <label for="jumlah">Jumlah:</label>
+                <input type="number" id="jumlah" name="jumlah" required min="1">
+                <br><br>
+
+                <label for="harga">Harga per Barang (Rp):</label>
+                <input type="number" id="harga" name="harga">
+                <br><br>
+
+                <button type="submit">Tambah Barang Masuk</button>
+            </form>
+
+            <!-- Tabel Barang Masuk -->
+            <h2>Daftar Barang Masuk</h2>
+            <table id="incoming-table">
+                <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>Barang</th>
+                        <th>Jumlah</th>
+                        <th>Harga Per Barang</th>
+                        <th>Total Harga</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Baris tabel akan ditambahkan di sini -->
+                </tbody>
+            </table>
+
+            <!-- Tabel Keuntungan -->
+            <section class="profit-table">
+                <h2>Keuntungan Barang Masuk</h2>
+                <table id="profit-table">
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>Barang</th>
+                            <th>Jumlah</th>
+                            <th>Harga Asli</th>
+                            <th>Harga Jual</th>
+                            <th>Total Keuntungan</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Baris tabel akan ditambahkan di sini -->
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penjualan</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar Menu -->
+        <aside class="sidebar">
+            <h2>Menu</h2>
+            <nav>
+               <ul>
+                <li><a href="index.html" id="home">Beranda</a></li>
+                <li><a href="stok.html" id="stock">Stok Barang</a></li>
+                <li><a href="barang_masuk.html" id="incoming">Barang Masuk</a></li>
+                <li><a href="penjualan.html" id="sales">Penjualan</a></li>
+                <li><a href="pengeluaran.html" id="expenses">Pengeluaran</a></li>
+                <li><a href="keuntungan.html" id="profit">Keuntungan</a></li> 
+            </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="content">
+            <h1>Penjualan</h1>
+
+            <!-- Form untuk Menambahkan Penjualan -->
+            <section class="add-sale">
+                <h2>Tambah Penjualan</h2>
+                <form id="sale-form">
+                    <label for="barang">Pilih Barang:</label>
+                    <select id="barang" name="barang">
+                        <option value="barang1">Barang 1</option>
+                        <option value="barang2">Barang 2</option>
+                        <option value="barang3">Barang 3</option>
+                        <option value="barang4">Barang 4</option>
+                        <option value="barang5">Barang 5</option>
+                        <option value="barang6">Barang 6</option>
+                        <option value="barang7">Barang 7</option>
+                        <option value="barang8">Barang 8</option>
+                    </select>
+                    <label for="jumlah">Jumlah Terjual:</label>
+                    <input type="number" id="jumlah" name="jumlah" min="1" required>
+                    <button type="submit">Tambah Penjualan</button>
+                </form>
+            </section>
+
+            <!-- Tabel Penjualan -->
+            <section class="sales-table">
+                <h2>Daftar Penjualan</h2>
+                <table id="sales-table">
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>Barang</th>
+                            <th>Jumlah</th>
+                            <th>Total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Baris tabel akan ditambahkan di sini -->
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
